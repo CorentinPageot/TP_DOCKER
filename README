@@ -2,7 +2,7 @@ Pour lancer le projet, faire npm start
 
 Aller sur localhost:5000 pour l'accueil du projet
 
-Il y a 3 routes : /users, /produits et /commandes
+Il y a 3 routes accesibles via les boutons : /users, /produits et /commandes
 
 La route users liste tous les users de la table users
 
