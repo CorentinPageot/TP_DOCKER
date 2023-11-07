@@ -25,17 +25,13 @@ module.exports = (dbPool) => {
                                     <table>
                                         <tr>
                                             <th>ID de la Commande</th>
-                                            <th>ID du User</th>
                                             <th>Nom du User</th>
-                                            <th>ID du Produit</th>
                                             <th>Nom du produit</th>
                                         </tr>
                                         ${rows.map(commande => `
                                             <tr>
                                                 <td>${commande.commandes_id}</td>
-                                                <td>${commande.users_id}</td>
                                                 <td>${commande.user_nom}</td>
-                                                <td>${commande.produits_id}</td>
                                                 <td>${commande.produit_nom}</td>
                                             </tr>
                                         `).join('')}
