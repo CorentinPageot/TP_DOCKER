@@ -1,9 +1,9 @@
--Pour lancer le projet, faire npm start
-
--Aller sur localhost:5000 pour le front du projet
-
-
 -Pour la bdd, il y a un script tp_docker.sql à la racine, il faut au préalable créer une bdd nommée tp_docker, puis importer le script
+
+
+-Pour lancer le projet, se placer à la racine et faire la commande npm start
+
+-Aller sur localhost:5000 pour afficher le front du projet
 
 
 -Il y a 3 routes accesibles via les boutons : /users, /produits et /commandes
