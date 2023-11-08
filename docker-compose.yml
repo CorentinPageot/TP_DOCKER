@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .                   # racine du projet comme contexte
+      dockerfile: ./docker-frontend/Dockerfile
+    ports:
+      - "8080:3000"                # port exposé par le frontend
+
+  api:
+    build:
+      context: .                   # racine du projet comme contexte
+      dockerfile: ./docker-api/Dockerfile
+    ports:
+      - "5001:5000"                # port exposé par l'API
+    depends_on:
+      - database                   # on attend que le conteneur de la bdd soit prêt
+
+  database:
+    build:
+      context: ./docker-database   # chemin vers le dossier contenant le Dockerfile de la bdd
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tp_docker
+    ports:
+      - "3306:3306"                # port exposé par la bdd

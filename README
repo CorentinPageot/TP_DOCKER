@@ -1,11 +1,19 @@
-Pour lancer le projet, faire npm start
+-Pour lancer le projet, faire npm start
 
-Aller sur localhost:5000 pour l'accueil du projet
+-Aller sur localhost:5000 pour le front du projet
 
-Il y a 3 routes accesibles via les boutons : /users, /produits et /commandes
 
-La route users liste tous les users de la table users
+-Pour la bdd, il y a un script tp_docker.sql à la racine, il faut au préalable créer une bdd nommée tp_docker, puis importer le script
 
-La route produits liste tous les produits de la table produits
 
-La route commandes liste toutes les commandes (avec des infos sur l'user qui a commandé, et le produit qu'il a commandé) de la table commandes
+-Il y a 3 routes accesibles via les boutons : /users, /produits et /commandes
+
+-La route users liste tous les users de la table users
+
+-La route produits liste tous les produits de la table produits
+
+-La route commandes liste toutes les commandes (avec des infos sur l'user qui a commandé, et le produit qu'il a commandé) de la table commandes
+
+
+-Pour lancer et exécuter les services définis dans le fichier docker-compose.yml,
+ouvrir un terminal, se placer à la racine du projet et faire la commande docker-compose up
